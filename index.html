@@ -5,8 +5,7 @@
       body {
         text-align: center;
         border: 3px solid green;
-      }
-      .disable-text-selection {
+        -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
         -moz-user-select: none;
@@ -16,14 +15,21 @@
       }
     </style>
   </head>
-  <body class="disable-text-selection" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false">
+  <body unselectable="on"
+        onselectstart="return false;" 
+        onmousedown="return false;" 
+        onpaste="return false;" 
+        onCopy="return false" 
+        onCut="return false" 
+        onDrag="return false" 
+        onDrop="return false">
     <p>
       <span>436: Wymagana autoryzacja użytkownika.</span>
       <br>
       <br>
       <span>Wyślij sms z kodem <span>'dhkiDSHIkdosODKcxpsaLDLCVlds'</span> na znany Ci numer, aby przejść dalej.</span>
       <br>
-      <span>Ładowanie: 10%</span>
+      <span>Ładowanie: 11%</span>
     </p>
   </body>
 </html>
